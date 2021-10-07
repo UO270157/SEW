@@ -1,14 +1,46 @@
 /*Especificidad: 001*/
 body {
     font-family: Tahoma, sans-serif;
-    color: #818181;
+    color: #080808;
     background-color: #fff;
     }
   /*Especificidad: 001*/
-  h1 {
-    color: #fff;    
-    background-color:#FF5733; 
+h1 {
+    color: #080808;    
+    background-color:#28be73; 
     text-transform: uppercase;
     padding: 2em; 
     text-align: center;     
+}
+/*Especificidad: 001*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Especificidad: 001*/
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Especificidad: 011*/
+.menu ul{
+    height: 4em;
+    width: 30em;
+    padding-left: 0;
+}
+/*Especificidad: 011*/
+.menu li{
+    float: left;
+    list-style: none;
+    width: auto;
+    background-color: #28be73;
+    padding: 0.75em;
+    text-align: center;
+}
+/*Especificidad: 012*/
+.menu li a {
+    color: #080808;
+    text-decoration: none;
     }
