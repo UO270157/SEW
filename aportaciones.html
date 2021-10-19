@@ -13,7 +13,7 @@
     <header>
         <h1>Mayor aportacion de Steve Jobs</h1>
     </header>
-    <nav class="menu">
+    <nav>
         <ul>
             <li><a accesskey="B" tabindex="1" href="index.html" >Bibliografía</a></li>
             <li><a accesskey="C" tabindex="2" href="creaciones.html" >Creaciones</a></li>            
@@ -25,31 +25,45 @@
         <h2>Deja tu Opinión</h2>
         <p>Indique a continuación cual cree que ha sido la mayor aportacion de Steve Jobs en el campo de la informática/telecomunicaciones y su nivel de importancia.</p>
         <form>
-            <label>Introduzca su nombre:</label>
-            <input type=text><br>
-            <label>Introduzca sus Apellidos:</label>
-            <input type=text><br>
-            <label>Introduzca su correo electrónico:</label>
-            <input type=text><br>
+            <label for="nombre">Introduzca su nombre:</label>
+            <input type=text id="nombre"><br>
+            <label for="apellidos">Introduzca sus Apellidos:</label>
+            <input type=text id="apellidos"><br>
+            <label for="correo">Introduzca su correo electrónico:</label>
+            <input type=text id="correo"><br>
             <fieldset>
              <legend> Creaciones: </legend>
-             <input type=radio name=creation><label> Apple I </label><br>
-             <label> <input type=radio name=creation> Apple Lisa </label><br>
-             <label> <input type=radio name=creation> NEXTSTEP </label><br>
-             <label> <input type=radio name=creation> IMac </label><br>
-             <label> <input type=radio name=creation> ITunes </label><br>
-             <label> <input type=radio name=creation> Mac OS X v10.0 </label><br>
-             <label> <input type=radio name=creation> IPod </label><br>
-             <label> <input type=radio name=creation> IPhone </label><br>
-             <label> <input type=radio name=creation> App Store </label><br>
-             <label> <input type=radio name=creation> IPad </label><br>
+             <input type=radio name=creation id="appleI">
+             <label for="appleI"> Apple I </label><br>
+             <input type=radio name=creation id="appleLisa">
+             <label for="appleLisa"> Apple Lisa </label><br>
+             <input type=radio name=creation id="nextstep">
+             <label for="nextstep"> NEXTSTEP </label><br>
+             <input type=radio name=creation id="imac">
+             <label for="imac"> IMac </label><br>
+             <input type=radio name=creation id="itunes">
+             <label for="itunes"> ITunes </label><br>
+             <input type=radio name=creation id="macos">
+             <label for="macos"> Mac OS X v10.0 </label><br>
+             <input type=radio name=creation id="ipod">
+             <label for="ipod"> IPod </label><br>
+             <input type=radio name=creation id="iphone">
+             <label for="iphone"> IPhone </label><br>
+             <input type=radio name=creation id="appstore">
+             <label for="appstore"> App Store </label><br>
+             <input type=radio name=creation id="ipad">
+             <label for="ipad"> IPad </label><br>
             </fieldset>
             <fieldset>
                 <legend> Cómo de importante cree que ha sido para el mundo de la informática: </legend>
-                <label> <input type=radio name=importance> Muy importante </label><br>
-                <label> <input type=radio name=importance> Importante </label><br>
-                <label> <input type=radio name=importance> Poco importante</label><br>
-                <label> <input type=radio name=importance> Nada importante</label><br>
+                <input type=radio name=importance id="Mimportante">
+                <label for="Mimportante"> Muy importante </label><br>
+                <input type=radio name=importance id="importante">
+                <label for="importante"> Importante </label><br>
+                <input type=radio name=importance id="Pimportante">
+                <label for="Pimportante"> Poco importante</label><br>
+                <input type=radio name=importance id="Nimportante">
+                <label for="Nimportante"> Nada importante</label><br>
             </fieldset>
             <input type="submit" value="Enviar">
         </form>
