@@ -1,0 +1,17 @@
+/*Especificidad: 001*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 40vw;
+    text-align: center;
+}
+/*Especificidad: 001*/
+th{
+    height: 5vh;
+    background-color: #28be73;
+}
+/*Especificidad: 001*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+}

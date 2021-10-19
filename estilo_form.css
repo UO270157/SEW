@@ -1,0 +1,10 @@
+/*Especificidad: 001*/
+form{
+    font-size: 2vh;
+    font-family: Tahoma, sans-serif;
+}
+/*Especificidad: 002*/
+form input{
+    font-size: 2vh;
+    font-family: Tahoma, sans-serif;
+}
