@@ -13,6 +13,7 @@ h1 {
     padding: 5vh; 
     text-align: center;     
 }
+/*Especificidad: 001*/
 h3{
     text-align: center;
 }
