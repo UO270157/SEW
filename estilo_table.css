@@ -9,6 +9,7 @@ table, th, td{
 th{
     height: 5vh;
     background-color: #28be73;
+    color: #080808;
 }
 /*Especificidad: 001*/
 table{
