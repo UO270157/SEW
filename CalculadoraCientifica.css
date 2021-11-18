@@ -1,0 +1,62 @@
+/*Especificidad (0,0,1)*/
+body{
+    background-color: azure;
+    color: black;
+}
+/*Especificidad (0,0,1)*/
+form{
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px 75px;
+    grid-gap: 3px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    width: 390px;
+    height: 600px;
+    margin:0 auto;
+}
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="9"],button[value="8"],button[value="7"],button[value="6"],button[value="5"],button[value="4"],button[value="3"],button[value="2"],button[value="1"],button[value="0"]{
+    background-color: white;
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="mr"],button[value="m-"],button[value="m+"],button[value="mc"],button[value="ms"],button[value="DEG"],button[value="HYP"],button[value="F-E"]{
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value=""]{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    grid-column: span 2;
+}
+/*Especificidad (0,1,1)*/
+input[value="C"]{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+input[value=""]{
+    grid-column: 1 / 6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    text-align: right;
+    height: 80px;
+    border: none;
+}
+/*Especificidad (0,0,1)*/
+label{
+    display: none;
+}

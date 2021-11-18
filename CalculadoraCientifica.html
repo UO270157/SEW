@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="CalculadoraCientifica.css"/>
+    <script src="CalculadoraCientifica.js"></script>
+    </head>
+<body> 
+    <script>
+        var calculadora = new CalculadoraCientifica();
+    </script>
+    <form> 
+        <label for="pantalla">pantalla</label>
+        <input type="text" value="" id="pantalla" disabled="" title="pantalla"/>
+        <button  type="button" value="DEG" onClick = "calculadora.deg()">DEG</button>
+        <button  type="button" value="HYP" onClick = "calculadora.hyp()">HYP</button>
+        <button  type="button" value="F-E" onClick = "calculadora.fe()">F-E</button>
+        <button  type="button" value="" ></button>
+        <button  type="button" value="mc" onClick = "calculadora.mc()">mc</button>
+        <button  type="button" value="mr" onClick = "calculadora.mr()">mr</button>
+        <button  type="button" value="m+" onClick = "calculadora.mMas()">m+</button>
+        <button  type="button" value="m-" onClick = "calculadora.mMenos()">m-</button>
+        <button  type="button" value="ms" onClick = "calculadora.ms()">ms</button>
+        <button  type="button" value="x2" onClick = "calculadora.x2()">x²</button>
+        <button  type="button" value="xy" onClick = "calculadora.xy()">x^y</button>
+        <button  type="button" value="sin" onClick = "calculadora.sin()">sin</button>
+        <button  type="button" value="cos" onClick = "calculadora.cos()">cos</button>
+        <button  type="button" value="tan" onClick = "calculadora.tan()">tan</button>
+        <button  type="button" value="raiz" onClick = "calculadora.raiz()">√</button>
+        <button  type="button" value="base10" onClick = "calculadora.base10()">10^x</button>
+        <button  type="button" value="log" onClick = "calculadora.log()">log</button>
+        <button  type="button" value="Exp" onClick = "calculadora.exp()">Exp</button>
+        <button  type="button" value="Mod" onClick = "calculadora.mod()">Mod</button>
+        <button  type="button" value="flecha" onClick = "calculadora.flecha()">↑</button>
+        <button  type="button" value="CE" onClick = "calculadora.ce()">CE</button>
+        <input  type="submit" value="C" onClick = "calculadora.borrar()"/>
+        <button  type="button" value="suprimir" onClick = "calculadora.suprimir()">&#9003;</button>
+        <button  type="button" value="/" onClick = "calculadora.division()">÷</button>
+        <button  type="button" value="pi" onClick = "calculadora.pi()">π</button>
+        <button  type="button" value="7" onClick = calculadora.digitos(7)>7</button>
+        <button  type="button" value="8" onClick = calculadora.digitos(8)>8</button>
+        <button  type="button" value="9" onClick = calculadora.digitos(9)>9</button>
+        <button  type="button" value="*" onClick = "calculadora.multiplicacion()">&times;</button>
+        <button  type="button" value="factorial" onClick = "calculadora.factorial()">n!</button>
+        <button  type="button" value="4" onClick = calculadora.digitos(4)>4</button>
+        <button  type="button" value="5" onClick = calculadora.digitos(5)>5</button>
+        <button  type="button" value="6" onClick = calculadora.digitos(6)>6</button>
+        <button  type="button" value="-" onClick = "calculadora.resta()">-</button>
+        <button  type="button" value="masmenos" onClick = "calculadora.masmenos()">±</button>
+        <button  type="button" value="1" onClick = calculadora.digitos(1)>1</button>
+        <button  type="button" value="2" onClick = calculadora.digitos(2)>2</button>
+        <button  type="button" value="3" onClick = calculadora.digitos(3)>3</button>
+        <button  type="button" value="suma" onClick = "calculadora.suma()">+</button>
+        <button  type="button" value="parentesisIzq" onClick = "calculadora.parentesisIzq()">(</button>
+        <button  type="button" value="parentesisDch" onClick = "calculadora.parentesisDch()">)</button>
+        <button  type="button" value="0" onClick = calculadora.digitos(0)>0</button>
+        <button  type="button" value="coma" onClick = "calculadora.punto()">,</button>
+        <button  type="button" value="=" onClick = "calculadora.igual()">=</button>
+    </form>
+</body>
+</html>
