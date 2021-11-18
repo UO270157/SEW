@@ -7,7 +7,7 @@ body{
 form{
     display: grid;
     grid-template-columns: 75px 75px 75px 75px 75px;
-    grid-gap: 12px;
+    grid-gap: 15px;
     background-color: rgb(201, 201, 201);
     color: black;
     width: 430px;
