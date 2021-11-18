@@ -4,6 +4,22 @@ body{
     color: black;
 }
 /*Especificidad (0,0,1)*/
+h1{
+    text-align:center;
+    background-color: azure;
+    font-size: 30px;
+    color: black;
+}
+/*Especificidad (0,0,1)*/
+section{
+    background-color: azure;
+    color: black;
+    width: 450px;
+    height: 600px;
+    padding: 20px;
+    margin:0 auto;
+}
+/*Especificidad (0,0,1)*/
 form{
     display: grid;
     grid-template-columns: 75px 75px 75px 75px 75px;
