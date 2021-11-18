@@ -48,10 +48,11 @@ button[value="mr"],button[value="m-"],button[value="m+"],button[value="mc"],butt
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value=" "]{
+button[value="vacio"]{
     background-color: rgb(201, 201, 201);
     color: black;
     grid-column: span 2;
+    opacity: 0;
 }
 /*Especificidad (0,1,1)*/
 input[value="C"]{
