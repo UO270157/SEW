@@ -61,3 +61,7 @@ input[value=""]{
     color: black;
     text-align: right;
 }
+/*Especificidad (0,0,1)*/
+label{
+    display: none;
+}
