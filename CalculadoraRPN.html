@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Calculadora RPN</title>
+    <link rel="stylesheet" href="CalculadoraRPN.css"/>
+    <script src="CalculadoraRPN.js"></script>
+    </head>
+<body>
+    <section>
+        <h1>Calculadora RPN</h1>   
+    <script>
+        var calculadora = new CalculadoraRPN();
+    </script>
+    <form> 
+        <textarea name="pila" id="pila" disabled=""></textarea>
+        <label for="pantalla">pantalla</label>
+        <input type="text" value="" id="pantalla" disabled="" title="pantalla"/>
+        <button  type="button" value="sin" onClick = "calculadora.sin()">sin</button>
+        <button  type="button" value="cos" onClick = "calculadora.cos()">cos</button>
+        <button  type="button" value="tan" onClick = "calculadora.tan()">tan</button>
+        <button  type="button" value="CE" onClick = "calculadora.ce()">CE</button>
+        <button  type="button" value="arcoseno" onClick = "calculadora.asin()">asin</button>
+        <button  type="button" value="arcocoseno" onClick = "calculadora.acos()">acos</button>
+        <button  type="button" value="arcotangente" onClick = "calculadora.atan()">atan</button>
+        <button  type="button" value="/" onClick = "calculadora.division()">÷</button>
+        <button  type="button" value="7" onClick = calculadora.digitos(7)>7</button>
+        <button  type="button" value="8" onClick = calculadora.digitos(8)>8</button>
+        <button  type="button" value="9" onClick = calculadora.digitos(9)>9</button>
+        <button  type="button" value="*" onClick = "calculadora.multiplicacion()">&times;</button>
+        <button  type="button" value="4" onClick = calculadora.digitos(4)>4</button>
+        <button  type="button" value="5" onClick = calculadora.digitos(5)>5</button>
+        <button  type="button" value="6" onClick = calculadora.digitos(6)>6</button>
+        <button  type="button" value="-" onClick = "calculadora.resta()">-</button>
+        <button  type="button" value="1" onClick = calculadora.digitos(1)>1</button>
+        <button  type="button" value="2" onClick = calculadora.digitos(2)>2</button>
+        <button  type="button" value="3" onClick = calculadora.digitos(3)>3</button>
+        <button  type="button" value="suma" onClick = "calculadora.suma()">+</button>
+        <button  type="button" value="coma" onClick = "calculadora.punto()">,</button>
+        <button  type="button" value="0" onClick = calculadora.digitos(0)>0</button>
+        <input  type="submit" value="C" onClick = "calculadora.borrar()"/>
+        <button  type="button" value="enter" onClick = "calculadora.enter()">Enter</button>
+    </form>
+    </section>
+</body>
+</html>
