@@ -12,8 +12,9 @@
     <script>
         var calculadora = new CalculadoraRPN();
     </script>
-    <form> 
-        <textarea name="pila" id="pila" disabled=""></textarea>
+    <form>         
+        <label for="pila">pila</label>
+        <textarea name="pila" id="pila" disabled=""  title="pantalla"></textarea>
         <label for="pantalla">pantalla</label>
         <input type="text" value="" id="pantalla" disabled="" title="pantalla"/>
         <button  type="button" value="sin" onClick = "calculadora.sin()">sin</button>
