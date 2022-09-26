@@ -1,9 +1,0 @@
-/*Especificidad: 001*/
-form{
-    font-size: 2vh;
-    font-family: Tahoma, sans-serif;
-}
-/*Especificidad: 001*/
-input{
-    margin-bottom: 2vh;
-}
