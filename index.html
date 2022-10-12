@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="UO270157" />
+    <meta name="description" content="pagina principal, contiene un pequeño resumen del framework" />
+    <meta name="keywords" content="Framework, JavaScript, aplicaciones, web, Ember.js" />
+    <meta name="viewport" content="wih3h=device-wih3h, initial-scale=1.0" />
+    <title>Ember.js</title>
+    <link rel="stylesheet" type="text/css" href="estilo/trabajo.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Ember.js</h1>
+    </header>
+    <nav>
+        <a accesskey="D" tabindex="1" href="index.html">Descripción</a>
+        <a accesskey="E" tabindex="2" href="usos.html" >Ejemplos usos</a>
+        <a accesskey="U" tabindex="3" href="versiones.html">Ultimas versiones</a>
+        <a accesskey="V" tabindex="4" href="valoracion.html">Valoración</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Descripción</h2>
+            <p>
+                <a href="https://emberjs.com/">Ember.js</a> es un Framework JavaScript de código abierto que utiliza un
+                patrón servicio-componente. Permite a los
+                desarrolladores crear aplicaciones web escalables de una sola página mediante la incorporación de modismos
+                comunes,
+                mejores prácticas y patrones de otros ecosistema de aplicaciones de una sola página en el framework.
+            </p>
+        </section>
+        <aside>
+            <img src="./multimedia/ember.png" alt="logo ember" />
+        </aside>
+        <section>
+            <p>
+                Según la empresa, Ember consta de cinco conceptos clave:
+            </p>
+            <h3>
+                Rutas
+            </h3>
+            <p>
+                En Ember, el estado de una aplicación está representado por una URL. Cada URL tiene un objeto de ruta
+                correspondiente que controla lo que es visible para el usuario.
+            </p>
+            <h3>
+                Modelos
+            </h3>
+            <p>
+                Cada ruta tiene un modelo asociado, que contiene los datos asociados al estado actual de la aplicación. Si
+                bien
+                se puede usar window.fetch para cargar objetos JSON desde un servidor y usar esos objetos como modelos, la
+                mayoría de las aplicaciones usan una biblioteca de modelos como Ember Data para manejar esto.
+            </p>
+            <h3>
+                Plantillas
+            </h3>
+            <p>
+                Las plantillas se utilizan para construir el HTML de la aplicación y se escriben con el lenguaje de
+                plantillas
+                HTMLBars . (HTMLBars es una variación de Handlebars que crea elementos DOM en lugar de una cadena).
+            </p>
+            <h3>
+                Componentes
+            </h3>
+            <p>
+                Un componente es una etiqueta HTML personalizada. El comportamiento se implementa usando JavaScript y su
+                apariencia se define usando plantillas HTMLBars. Los componentes "poseen" sus datos. También se pueden
+                anidar y
+                pueden comunicarse con sus componentes principales a través de acciones (eventos). Otras bibliotecas de
+                componentes, como Polymer, también se pueden usar con Ember.
+            </p>
+            <h3>
+                Servicios
+            </h3>
+            <p>
+                Los servicios son solo objetos únicos para almacenar datos de larga duración, como sesiones de usuario.
+                Ember también proporciona inyección de dependencia, flujo de datos unidireccional declarativo, propiedades
+                rastreadas y plantillas de actualización automática.
+            </p>
+        </section>
+        <section>
+            <h2>Introducción a Ember.js</h2>
+            <video controls>
+                <source src="multimedia/introduccion.mp4" type=video/mp4>
+                Introduccion Ember
+            </video>
+            <audio controls>
+                <source src="multimedia/introduccion.mp3" type=audio/mp3>
+                Introduccion Ember versión audio
+            </audio>
+        </section>
+    </main>
+</body>
+
+</html>

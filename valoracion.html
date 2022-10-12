@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="UO270157" />
+    <meta name ="description" content ="a continuacón encontraremos un formulario que recoge la opinión a cerca de Ember.js" />
+    <meta name ="keywords" content ="" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>Ember.js: Valoración</title>
+    <link rel="stylesheet" type="text/css" href="estilo/trabajo.css" />
+</head>
+
+<body>
+    <header>     
+        <h1>Ember.js</h1>
+    </header>
+    <nav>
+        <a accesskey="D" tabindex="1" href="index.html" >Descripción</a>
+        <a accesskey="E" tabindex="2" href="usos.html" >Ejemplos usos</a>            
+        <a accesskey="U" tabindex="3" href="versiones.html" >Ultimas versiones</a>
+        <a accesskey="V" tabindex="4" href="valoracion.html" >Valoración</a>    
+    </nav>
+    <main>
+        <section>
+            <h2>Valoración</h2>
+            <p>Indique a continuación cual es su opinión a cerca de Ember.js</p>
+            <form>
+                <label for="nombre">Introduzca su nombre:</label>
+                <input type=text id="nombre"><br>
+                <label for="apellidos">Introduzca sus Apellidos:</label>
+                <input type=text id="apellidos"><br>
+                <label for="correo">Introduzca su correo electrónico:</label>
+                <input type=text id="correo"><br>
+                <fieldset>
+                <legend> Cuáles de los siguientes sitios web has utilizado:</legend>
+                <input type=checkbox name=sites id="discourse">
+                <label for="discourse"> Discourse </label><br>
+                <input type=checkbox name=sites id="linkedIn">
+                <label for="linkedIn"> LinkedIn </label><br>
+                <input type=checkbox name=sites id="appleMusic">
+                <label for="appleMusic"> Apple Music </label><br>
+                <input type=checkbox name=sites id="twitch">
+                <label for="twitch"> Twitch </label><br>
+                <input type=checkbox name=sites id="nordstrom">
+                <label for="nordstrom"> Nordstrom </label><br>
+                <input type=checkbox name=sites id="intercom">
+                <label for="intercom"> Intercom </label><br>
+                <input type=checkbox name=sites id="groupon">
+                <label for="groupon"> Groupon </label><br>
+                </fieldset>
+                <fieldset>
+                    <legend> Cómo de útil consideras Ember.js:</legend>
+                    <input type=radio name=importance id="Mutil">
+                    <label for="Mutil"> Muy útil </label><br>
+                    <input type=radio name=importance id="util">
+                    <label for="util"> Util </label><br>
+                    <input type=radio name=importance id="Putil">
+                    <label for="Putil"> Poco útil</label><br>
+                    <input type=radio name=importance id="Nutil">
+                    <label for="Nutil"> Nada útil</label><br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
