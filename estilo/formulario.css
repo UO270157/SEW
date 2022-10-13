@@ -1,0 +1,8 @@
+/*Especificidad: 001*/
+input{
+    margin-bottom: 1em;
+}
+/*Especificidad: 011*/
+input [type="submit"]{
+    width: 10%;
+}

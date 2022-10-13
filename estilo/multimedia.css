@@ -1,0 +1,12 @@
+/*Especificidad: 001*/
+audio, video, img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Especificidad: 001*/
+img{
+    max-width: 50em;
+    width: 20em;
+    height: auto;
+}
