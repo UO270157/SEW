@@ -1,12 +1,13 @@
 /*Especificidad: 001*/
-img{
-    max-width: 50em;
-    width: 20em;
+img, video{
+    width: 80vw;
     height: auto;
+}
+/*Especificidad: 001*/
+img{
+    max-width: 25em;
 }
 /*Especificidad: 001*/
 video{
     max-width: 40em;
-    width: 80vw;
-    height: auto;
 }
