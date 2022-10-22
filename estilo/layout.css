@@ -11,6 +11,7 @@ body{
 nav{
     display: flex; 
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 1em;
     gap: 0.5em;
     margin-top: 1em;
