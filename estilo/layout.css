@@ -1,0 +1,39 @@
+/********
+Pablo Fernández Díaz - UO270157
+Descripción de los estilos
+*******/
+/*Especificidad: 001*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*Especificidad: 001*/
+nav{
+    display: flex; 
+    justify-content: flex-start;
+    padding: 1em;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+/*Especificidad: 001*/
+header{
+    display: flex; 
+    justify-content: flex-start;
+    padding: 1em;
+    gap: 0.5em;
+}
+/*Especificidad: 001*/
+section{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 1em;
+    padding: 0.5em;
+}
+/*Especificidad: 001*/
+footer{
+    display: flex; 
+    justify-content: center;
+    padding: 0.4em;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
