@@ -3,6 +3,12 @@ input{
     margin-bottom: 1em;
 }
 /*Especificidad: 011*/
-input [type="submit"]{
-    width: 10%;
+input[type=submit]{
+    font-size: 1em;
+    width: 7em;
+    height: 2em;
+}
+/*Especificidad: 011*/
+input[type=text]{
+    font-size: 1em;
 }
