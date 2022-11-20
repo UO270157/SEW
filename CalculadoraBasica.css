@@ -1,0 +1,67 @@
+/*Especificidad (0,0,1)*/
+h1{
+    text-align:center;
+    background-color: rgb(202, 161, 72);
+    font-size: 30px;
+    color: black;
+}
+/*Especificidad (0,0,1)*/
+section{
+    background-color: rgb(202, 161, 72);
+    color: black;
+    margin:0 auto;
+}
+/*Especificidad (0,0,1)*/
+form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    background-color: rgb(58, 57, 56);
+    color: black;
+    width: 100vw;
+    height: auto;
+    max-width: 450px;
+    padding: 1.75em;
+    border-radius: 15px;
+    margin:0 auto;
+}
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 2em;
+    border-radius: 8px;
+    background-color: darkgray;
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+input[value="C"]{
+    font-size: 2em;
+    border-radius: 8px;
+    background-color: rgb(97, 97, 97);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="mrc"],button[value="m-"],button[value="m+"],button[value="CE"],button[value="±"],button[value="√"],button[value="%"],button[value="*"],button[value="/"],button[value="+"],button[value="-"]{
+    background-color: rgb(97, 97, 97);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+input[value=""]{
+    font-size: 2em;
+    grid-column: 1 / 6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(202, 236, 167, 0.952);
+    color: black;
+    text-align: right;
+}
+/*Especificidad (0,1,1)*/
+button[value="+"]{
+    grid-row: 6/8;
+    grid-column: 4;
+}
+/*Especificidad (0,0,1)*/
+label{
+    grid-column: 1/6;
+    color: white;
+    font-size: 1em;
+}
