@@ -7,10 +7,12 @@ h1{
 /*Especificidad (0,0,1)*/
 main{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 2.5%;
     background-color: rgb(58, 57, 56);
     color: black;
+    width: 85vw;
+    height: 80vh;
     max-width: 40em;
     max-height: 30em;
     border-radius: 15px;
@@ -19,14 +21,14 @@ main{
 }
 /*Especificidad (0,0,1)*/
 button{
-    font-size: 1.5em;
+    font-size: 1.8em;
     border-radius: 8px;
     background-color: darkgray;
     color: black;
 }
 /*Especificidad (0,1,1)*/
 input[value="C"]{
-    font-size: 1.5em;
+    font-size: 1.8em;
     border-radius: 8px;
     background-color: rgb(97, 97, 97);
     color: black;
@@ -38,7 +40,7 @@ button[value="mrc"],button[value="m-"],button[value="m+"],button[value="CE"],but
 }
 /*Especificidad (0,1,1)*/
 input[value=""]{
-    font-size: 1.5em;
+    font-size: 1.8em;
     grid-column: 1 / 6;   
     margin-bottom: 0.5em;
     background-color: rgba(202, 236, 167, 0.952);
