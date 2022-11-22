@@ -1,0 +1,66 @@
+/*Especificidad (0,0,1)*/
+h1{
+    text-align:center;
+    font-size: 2em;
+}
+/*Especificidad (0,0,1)*/
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 2.5%;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    width: 100vw;
+    height: 80vh;
+    max-width: 40em;
+    max-height: 45em;
+    margin:0 auto;
+    padding: 0.5%;
+}
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 1.7em;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="9"],button[value="8"],button[value="7"],button[value="6"],button[value="5"],button[value="4"],button[value="3"],button[value="2"],button[value="1"],button[value="0"],button[value="coma"]{
+    background-color: white;
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="mr"],button[value="m-"],button[value="m+"],button[value="mc"],button[value="ms"],button[value="DEG"],button[value="HYP"],button[value="F-E"]{
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="vacio"]{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    grid-column: span 2;
+    opacity: 0;
+}
+/*Especificidad (0,1,1)*/
+input[value="C"]{
+    font-size: 1.8em;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+input[value=""]{
+    grid-column: 1 / 6;
+    font-size: 2.5em;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    text-align: right;
+    border: none;
+}
+/*Especificidad (0,0,1)*/
+label{
+    grid-column: 1/6;
+    color: black;
+    background-color: rgb(201, 201, 201);
+    font-size: 1.5em;
+}
