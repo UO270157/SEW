@@ -1,0 +1,58 @@
+/*Especificidad (0,0,1)*/
+h1{
+    text-align:center;
+    font-size: 2em;
+}
+/*Especificidad (0,0,1)*/
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-gap: 2.5%;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    width: 100vw;
+    height: 80vh;
+    max-width: 40em;
+    max-height: 45em;
+    margin:0 auto;
+    padding: 0.5%;
+}
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 30px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="9"],button[value="8"],button[value="7"],button[value="6"],button[value="5"],button[value="4"],button[value="3"],button[value="2"],button[value="1"],button[value="0"]{
+    background-color: white;
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+textarea{
+    grid-column: 1 / 5;
+    margin: 0;
+    font-size: 35px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    text-align: right;
+    height: 150px;   
+    box-sizing: border-box;
+    resize: none;
+}
+/*Especificidad (0,1,1)*/
+input[value=""]{
+    grid-column: 1 / 5;
+    font-size: 35px;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    text-align: right;
+    height: 50px;   
+    box-sizing: border-box;
+    margin: 0;
+}
+/*Especificidad (0,0,1)*/
+label{
+    display: none;
+}
