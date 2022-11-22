@@ -1,0 +1,54 @@
+/*Especificidad (0,0,1)*/
+h1{
+    text-align:center;
+    font-size: 2em;
+}
+/*Especificidad (0,0,1)*/
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-gap: 2.5%;
+    background-color: rgb(58, 57, 56);
+    color: black;
+    width: 85vw;
+    height: 80vh;
+    max-width: 40em;
+    max-height: 30em;
+    border-radius: 15px;
+    padding: 1em;
+    margin: auto;
+}
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 1.8em;
+    border-radius: 8px;
+    background-color: darkgray;
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+button[value="mrc"],button[value="m-"],button[value="m+"],button[value="CE"],button[value="±"],button[value="√"],button[value="%"],button[value="*"],button[value="/"],button[value="+"],button[value="-"],button[value="C"]{
+    background-color: rgb(97, 97, 97);
+    color: black;
+}
+/*Especificidad (0,1,1)*/
+input[value=""]{
+    font-size: 1.8em;
+    grid-column: 1 / 6;   
+    margin-bottom: 0.5em;
+    background-color: rgba(202, 236, 167, 0.952);
+    color: black;
+    text-align: right;
+}
+/*Especificidad (0,1,1)*/
+button[value="+"]{
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column: 4;
+}
+/*Especificidad (0,0,1)*/
+label{
+    grid-column: 1/6;
+    color: white;
+    background-color: rgb(58, 57, 56);
+    font-size: 1.5em;
+}

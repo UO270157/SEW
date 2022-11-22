@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="author" content ="UO270157" >
+    <meta name ="description" content ="calculadora milan" >
+    <meta name ="keywords" content ="calculadora, Milan" >
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
+    <title>Calculadora Milán</title>
+    <link rel="stylesheet" href="CalculadoraMilan.css"/>
+    <script src="CalculadoraMilan.js"></script>
+</head>
+<body>
+    <h1>Calculadora Milán</h1>   
+    <script>
+        var calculadora = new Calculadora();
+    </script>
+    <main>
+        <label for="pantalla">Pantalla calculadora Milán</label>
+        <input type="text" value="" id="pantalla" disabled="" title="pantalla"/>
+        <button  type="button" value="C" onClick = "calculadora.borrar()">C</button>
+        <button  type="button" value="CE" onClick = "calculadora.ce()">CE</button>
+        <button  type="button" value="±" onClick = "calculadora.masmenos()">±</button>
+        <button  type="button" value="√" onClick = "calculadora.raiz()">√</button>
+        <button  type="button" value="%" onClick = "calculadora.porcentaje()">%</button>
+        <button  type="button" value="7" onClick = calculadora.digitos(7)>7</button>
+        <button  type="button" value="8" onClick = calculadora.digitos(8)>8</button>
+        <button  type="button" value="9" onClick = calculadora.digitos(9)>9</button>
+        <button  type="button" value="*" onClick = "calculadora.multiplicacion()">x</button>
+        <button  type="button" value="/" onClick = "calculadora.division()">÷</button>
+        <button  type="button" value="4" onClick = calculadora.digitos(4)>4</button>
+        <button  type="button" value="5" onClick = calculadora.digitos(5)>5</button>
+        <button  type="button" value="6" onClick = calculadora.digitos(6)>6</button>
+        <button  type="button" value="-" onClick = "calculadora.resta()">-</button>
+        <button  type="button" value="mrc" onClick = "calculadora.mrc()">MRC</button>
+        <button  type="button" value="1" onClick = calculadora.digitos(1)>1</button>
+        <button  type="button" value="2" onClick = calculadora.digitos(2)>2</button>
+        <button  type="button" value="3" onClick = calculadora.digitos(3)>3</button>
+        <button  type="button" value="+" onClick = "calculadora.suma()">+</button>
+        <button  type="button" value="m-" onClick = "calculadora.mMenos()">M-</button>     
+        <button  type="button" value="0" onClick = calculadora.digitos(0)>0</button>
+        <button  type="button" value="." onClick = "calculadora.punto()">.</button>
+        <button  type="button" value="=" onClick = "calculadora.igual()">=</button>
+        <button  type="button" value="m+" onClick = "calculadora.mMas()">M+</button>
+    </main>
+</body>
+</html>
