@@ -54,5 +54,8 @@ input[value=""]{
 }
 /*Especificidad (0,0,1)*/
 label{
-    display: none;
+    grid-column: 1/5;
+    color: black;
+    background-color: rgb(201, 201, 201);
+    font-size: 1.5em;
 }
