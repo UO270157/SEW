@@ -1,0 +1,8 @@
+/*Especificidad (0,0,1)*/
+h1{
+    font-size: 3em;
+}
+/*Especificidad (0,0,1)*/
+input, p {
+    font-size: 1.25em;
+}
