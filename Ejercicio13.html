@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name ="author" content ="UO270157" >
+    <meta name ="description" content ="Ejercicio13" >
+    <meta name ="keywords" content ="mapa" >
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
+    <title>Ejercicio13</title>
+    <link rel="stylesheet" href="Ejercicio13.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio13.js"></script>
+    </head>
+<body>
+    <h1>Ejercicio 13 - Tarea 1</h1>
+    <label for="archivo">Introduzca un archivo:</label>
+    <input type="file" id="archivo" accept=".kml" onchange="ejercicio.cargarArchivo(this.files);">
+    <main id="mapa"></main>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&amp;callback=ejercicio.cargarArchivo"></script>
+</body>
+</html>

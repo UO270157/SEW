@@ -1,0 +1,14 @@
+/*Especificidad (0,0,1)*/
+h1{
+    font-size: 3em;
+}
+/*Especificidad (0,0,1)*/
+main{
+    width:100%; 
+    height:50vh; 
+}
+/*Especificidad (0,0,1)*/
+input{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
