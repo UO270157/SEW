@@ -1,9 +1,14 @@
 /*Especificidad (0,0,1)*/
+label, input, button{
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+/*Especificidad (0,0,1)*/
 h1{
     font-size: 3em;
 }
 /*Especificidad (0,0,1)*/
-main {
+main{
     width:100%; 
-    height:50vw; 
+    height:60vh; 
 }

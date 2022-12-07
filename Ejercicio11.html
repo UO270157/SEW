@@ -6,13 +6,23 @@
     <meta name ="description" content ="Ejercicio11" >
     <meta name ="keywords" content ="posicion" >
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
-    <title>Ejercicio11 - Tarea 5</title>
+    <title>Ejercicio11 - Tarea 6</title>
     <link rel="stylesheet" href="Ejercicio11.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Ejercicio11.js"></script>
     </head>
 <body>
+    <section>
+        <h1>Ejercicio 11</h1>
+        <form>
+            <label for="lat">Latitud:</label>
+            <input type="text" id="lat" name="lat" value="43.3672702">
+            <label for="long">Longitud:</label>
+            <input type="text" id="long" name="long" value="-5.8502461">
+            <input type="button" value="Localizar" onclick="localizacion.getMapaDinamicoUbicacion()">
+          </form> 
+    </section>
     <main id="mapa"></main>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&amp;callback=localizacion.getMapaDinamicoUsuario"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&amp;callback=localizacion.getMapaDinamicoUbicacion"></script>
 </body>
 </html>
