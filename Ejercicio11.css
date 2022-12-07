@@ -1,0 +1,8 @@
+/*Especificidad (0,0,1)*/
+button{
+    font-size: 2em;
+}
+/*Especificidad (0,0,1)*/
+h1{
+    font-size: 3em;
+}
