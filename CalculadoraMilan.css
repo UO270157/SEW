@@ -4,14 +4,14 @@ h1{
     font-size: 2em;
 }
 /*Especificidad (0,0,1)*/
-main{
+form{
     display: grid;
     grid-template-columns: repeat(5, 18%);
     grid-gap: 2.5%;
     background-color: rgb(58, 57, 56);
     color: black;
     width: 85vw;
-    height: 80vh;
+    height: 100vh;
     max-width: 40em;
     max-height: 30em;
     border-radius: 15px;
@@ -19,19 +19,19 @@ main{
     margin: auto;
 }
 /*Especificidad (0,0,1)*/
-button{
+input{
     font-size: 1.8em;
     border-radius: 8px;
     background-color: darkgray;
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value="mrc"],button[value="m-"],button[value="m+"],button[value="CE"],button[value="±"],button[value="√"],button[value="%"],button[value="*"],button[value="/"],button[value="+"],button[value="-"],button[value="C"]{
+input[value="mrc"],input[value="m-"],input[value="m+"],input[value="CE"],input[value="±"],input[value="√"],input[value="%"],input[value="*"],input[value="÷"],input[value="+"],input[value="-"],input[value="C"]{
     background-color: rgb(97, 97, 97);
     color: black;
 }
 /*Especificidad (0,1,1)*/
-input[value=""]{
+input[type="text"]{
     font-size: 1.8em;
     grid-column: 1 / 6;   
     margin-bottom: 0.5em;
@@ -40,9 +40,8 @@ input[value=""]{
     text-align: right;
 }
 /*Especificidad (0,1,1)*/
-button[value="+"]{
-    grid-row-start: 6;
-    grid-row-end: 8;
+input[value="+"]{
+    grid-row: 6/8;
     grid-column: 4;
 }
 /*Especificidad (0,0,1)*/

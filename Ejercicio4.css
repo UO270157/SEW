@@ -1,0 +1,18 @@
+/*Especificidad (0,0,1)*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*Especificidad (0,0,1)*/
+p, label{
+    font-size: 1.25em;
+}
+/*Especificidad (0,0,1)*/
+input{
+    font-size: 1.5em;
+    margin: 0.4em;
+}
+/*Especificidad (0,1,1)*/
+input[class=button]{
+    margin: 0.5em;
+}

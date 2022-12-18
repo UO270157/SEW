@@ -4,7 +4,7 @@ h1{
     font-size: 2em;
 }
 /*Especificidad (0,0,1)*/
-main{
+form{
     display: grid;
     grid-template-columns: repeat(5, 18%);
     grid-gap: 2.5%;
@@ -18,38 +18,31 @@ main{
     padding: 0.5%;
 }
 /*Especificidad (0,0,1)*/
-button{
+input{
     font-size: 1.7em;
     border: none;
     background-color: rgb(211, 211, 211);
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value="9"],button[value="8"],button[value="7"],button[value="6"],button[value="5"],button[value="4"],button[value="3"],button[value="2"],button[value="1"],button[value="0"],button[value="coma"]{
+input[value="9"],input[value="8"],input[value="7"],input[value="6"],input[value="5"],input[value="4"],input[value="3"],input[value="2"],input[value="1"],input[value="0"],input[value="coma"]{
     background-color: white;
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value="mr"],button[value="m-"],button[value="m+"],button[value="mc"],button[value="ms"],button[value="DEG"],button[value="HYP"],button[value="F-E"]{
+input[value="mr"],input[value="m-"],input[value="m+"],input[value="mc"],input[value="ms"],input[value="DEG"],input[value="HYP"],input[value="F-E"]{
     background-color: rgb(201, 201, 201);
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value="vacio"]{
+input[value="vacio"]{
     background-color: rgb(201, 201, 201);
     color: black;
     grid-column: span 2;
     opacity: 0;
 }
 /*Especificidad (0,1,1)*/
-input[value="C"]{
-    font-size: 1.8em;
-    border: none;
-    background-color: rgb(211, 211, 211);
-    color: black;
-}
-/*Especificidad (0,1,1)*/
-input[value=""]{
+input[type="text"]{
     grid-column: 1 / 6;
     font-size: 2.5em;
     background-color: rgb(201, 201, 201);

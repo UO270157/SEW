@@ -4,7 +4,7 @@ h1{
     font-size: 2em;
 }
 /*Especificidad (0,0,1)*/
-main{
+form{
     display: grid;
     grid-template-columns: repeat(4, 23%);
     grid-gap: 2.5%;
@@ -18,14 +18,14 @@ main{
     padding: 0.5%;
 }
 /*Especificidad (0,0,1)*/
-button{
+input{
     font-size: 1.7em;
     border: none;
     background-color: rgb(211, 211, 211);
     color: black;
 }
 /*Especificidad (0,1,1)*/
-button[value="9"],button[value="8"],button[value="7"],button[value="6"],button[value="5"],button[value="4"],button[value="3"],button[value="2"],button[value="1"],button[value="0"]{
+input[value="9"],input[value="8"],input[value="7"],input[value="6"],input[value="5"],input[value="4"],input[value="3"],input[value="2"],input[value="1"],input[value="0"]{
     background-color: white;
     color: black;
 }
@@ -42,7 +42,7 @@ textarea{
     resize: none;
 }
 /*Especificidad (0,1,1)*/
-input[value=""]{
+input[type="text"]{
     grid-column: 1 / 5;
     font-size: 2.5em;
     background-color: rgb(201, 201, 201);
